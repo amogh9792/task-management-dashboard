@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# settings.py
+LOGIN_REDIRECT_URL = 'admin_dashboard'  # After successful login, redirect to the admin dashboard
+
 
 # Application definition
 
@@ -37,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'task_app'
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
